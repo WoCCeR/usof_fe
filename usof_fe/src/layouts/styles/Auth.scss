@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap")
+    format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.authStyle {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fafdfd;
+    border-radius: 2px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+
+    .title {
+      color: rgba(152, 112, 80, 0.77);
+    }
+
+    input {
+      background-color: #fafdfd;
+      color: #451f0a;
+    }
+
+    input::placeholder {
+      color: rgba(228, 95, 10, 0.47);
+    }
+  }
+
+  .container .forms {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+  }
+
+  .container .form {
+    width: 50%;
+    padding: 30px;
+    background-color: #fafdfd;
+    transition: margin-left 0.18s ease;
+  }
+
+  .container.active .login {
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+  }
+
+  .container .signup {
+    opacity: 0;
+    transition: opacity 0.09s ease;
+  }
+
+  .container.active .signup {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+
+  .container.active .forms {
+    height: 600px;
+  }
+
+  .container .form .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+  }
+
+  .form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 2px solid #d1dbe4;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .input-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .input-field .uil {
+    position: absolute;
+    left: 8px;
+    color: #a55c0b;
+  }
+
+  .input-field input:is(:focus, :valid) {
+    border-bottom-color: #bf7428;
+  }
+
+  .input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e46c2b;
+    font-size: 23px;
+    transition: all 0.2s ease;
+  }
+
+  .input-field input:is(:focus, :valid) ~ i {
+    color: #dc5e25;
+  }
+
+  .input-field .i {
+    left: 0;
+  }
+
+  .input-field i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .form .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox-content input {
+    margin-right: 10px;
+    accent-color: #c37822;
+  }
+
+  .form .text {
+    color: #b8751d;
+    font-size: 16px;
+  }
+
+  .form a:hover {
+    text-decoration: underline;
+  }
+
+  .form .button {
+    margin-top: 35px;
+  }
+
+  .form .button input {
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #cf7c1d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .button input:hover {
+    background-color: #cc7014;
+  }
+
+  .login-signup {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}

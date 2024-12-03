@@ -1,0 +1,47 @@
+.action-container {
+  background-color: #f9fafc;
+  margin-top: 15px;
+  font-size: 18px;
+  border-radius: 2px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #374151;
+  }
+
+  .icon {
+    color: #6b7280;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  .icon:hover {
+    transform: scale(1.1);
+    color: #1f2937;
+  }
+
+  .selected-icon {
+    color: #f57c00;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}

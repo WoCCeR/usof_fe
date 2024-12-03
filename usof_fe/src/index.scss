@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+}
+
+.centerText {
+  margin-top: 5px;
+  align-self: center;
+  color: #4a3b26;
+}
+
+.post-commet {
+  input {
+    width: 100%;
+    height: 30px;
+  }
+
+  textarea {
+    width: 100%;
+    resize: vertical;
+  }
+
+  textarea,
+  input {
+    background-color: #fafdfd;
+    border: 1px solid rgb(74, 59, 38);
+    border-radius: 2px;
+    color: #4a3b26;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: rgb(74, 59, 38);
+    font-weight: 600;
+  }
+
+  textarea:focus,
+  input:focus,
+  select:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px rgba(80, 95, 152, 0.35);
+    border: 1px solid #4a3b26;
+    color: #4a3b26;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.updateTools svg {
+  color: #4a3b26;
+  transition: transform 0.3s ease;
+}
+
+.updateTools svg:hover {
+  transform: scale(1.2);
+}
+
+.markdownStyles{
+  color: #4a3b26;
+}
+
+.category-title{
+  padding-right: 10px;
+}
+

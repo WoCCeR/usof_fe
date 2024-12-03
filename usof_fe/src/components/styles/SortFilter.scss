@@ -1,0 +1,33 @@
+.sort-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+
+  button {
+    background-color: #f1a22f;
+    border: none;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 2px;
+    padding: 10px 35px;
+    color: #e7ecff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &.selected {
+      background-color: #d17b2d;
+    }
+
+    &:hover {
+      background-color: #d17b2d;
+      transform: translateY(-2px);
+    }
+
+    &:focus {
+      outline: 2px solid #d17b2d;
+      background-color: #d17b2d;
+    }
+  }
+}

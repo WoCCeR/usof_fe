@@ -1,0 +1,78 @@
+$post-bg: #fff5e6;
+$post-border: #ffcc99;
+$post-primary-text: #251106;
+$post-secondary-text: #2e2926;
+$post-icon: #ff944d;
+
+.post {
+  background-color: $post-bg;
+  border-radius: 2px;
+  width: calc((100% - 20px)/2);
+  box-shadow: 0 4px 8px $post-primary-text;
+  padding: 10px;
+  margin-top: 10px;
+  border: 3px solid $post-border;
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      margin-left: 5px;
+      color: $post-secondary-text;
+    }
+
+    .authorInfo {
+      display: flex;
+      align-items: center;
+
+      .publishDate {
+        color: lighten($post-secondary-text, 30%);
+      }
+    }
+  }
+
+  h4 {
+    margin: 5px 0;
+    color: $post-primary-text;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .markdownStyles {
+    margin: 10px 0;
+    font-size: 15px;
+    color: $post-secondary-text;
+
+    a {
+      color: $post-primary-text;
+      text-decoration: underline;
+
+      &:hover {
+        color: darken($post-primary-text, 10%);
+      }
+    }
+  }
+
+  .d-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    .commentIcon {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin-right: 5px;
+        color: $post-icon;
+      }
+
+      span {
+        color: $post-secondary-text;
+      }
+    }
+  }
+}

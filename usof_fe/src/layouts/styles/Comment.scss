@@ -1,0 +1,65 @@
+.commentsContent {
+  width: 65%;
+  margin-left: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  .writebleCommentField {
+    margin-top: 15px;
+    background-color: #fafdfd;
+    border-radius: 3px;
+    padding: 20px;
+  }
+
+  .comment {
+    background-color: #f8fbff;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 15px;
+
+    .flex-center {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      justify-content: space-between;
+
+      span {
+        margin-left: 5px;
+        color: #4a3b26;
+      }
+
+      .authorInfo {
+        display: flex;
+        align-items: center;
+      }
+
+      .publishDate {
+        color: rgba(80, 95, 152, 0.5);
+      }
+    }
+
+    h4 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: #091133;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    span {
+      color: #4a3b26;
+      font-size: 15px;
+    }
+
+    .action-container {
+      font-size: 20px;
+      display: inline-flex;
+      align-self: flex-start;
+
+      span {
+        font-size: 19px;
+      }
+    }
+  }
+}

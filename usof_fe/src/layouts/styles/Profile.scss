@@ -1,0 +1,218 @@
+section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+
+
+  .postContent {
+    width: 75%;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+
+    .yourPostsText {
+      margin-top: 5px;
+      align-self: center;
+      color: #4a3b26;
+    }
+  }
+
+  .profile {
+    width: 12%;
+    background-color: #f8fbff;
+    border-radius: 5px;
+
+    .cover {
+      background-size: cover;
+      height: 80px;
+      border-radius: 5px;
+
+      img {
+        margin-top: 46px;
+        margin-left: 30px;
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      color: #4a3b26;
+
+      .login {
+        color: rgba(80, 95, 152, 0.35);
+        font-size: 13px;
+      }
+
+      .additionalInfo {
+        margin-top: 30px;
+
+        span {
+          margin-left: 5px;
+          font-size: 15px;
+        }
+
+        .flex-center {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.postButton {
+  background-color: #cd8d13;
+  border: #e7ecff;
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 35px;
+  padding-right: 35px;
+  float: right;
+
+  color: #e7ecff;
+}
+
+.editAvatar {
+  margin-left: 5px;
+}
+
+.editAvatarField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    margin-top: 5px;
+
+    background-color: #cd8d13;
+    border: #e7ecff;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 35px;
+    padding-right: 35px;
+    float: right;
+
+    color: #e7ecff;
+  }
+
+  input[type="file"]::file-selector-button {
+    background-color: #cd8d13;
+    border: #e7ecff;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    color: #e7ecff;
+  }
+
+  input[type="file"]::file-selector-button:hover {
+    background-color: #4f517c;
+  }
+}
+
+.slider {
+  align-items: baseline;
+  flex-direction: column;
+  float: left;
+  margin-left: 5px;
+  width: 250px;
+  color: #332313;
+
+  .chose {
+    transition: background-image 0.3s ease;
+    border-radius: 5px;
+  }
+
+  .chose:hover {
+    background-image: linear-gradient(to bottom right, rgba(213, 124, 44, 0.25), transparent);
+  }
+
+  .active-chose {
+    background-image: linear-gradient(to bottom right, rgba(255, 134, 36, 0.7), transparent);
+  }
+
+  .home {
+    margin: 5px;
+  }
+
+  .categories {
+    justify-content: space-between;
+  }
+
+  .category {
+    margin: 5px;
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+
+.pageList {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+
+  .page {
+    background-color: #f8fbff;
+    border: double #e7ecff;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 2px;
+  }
+
+  .page:hover {
+    background-color: #e7ecff;
+    border: double #f8fbff;
+  }
+
+  .selected {
+    background-color: #c18c1c;
+    border: double #f8fbff;
+    span {
+      color: #e7ecff;
+    }
+  }
+
+  span {
+    color: #bc652d;
+    font-size: 15px;
+  }
+}
+
+.posts {
+  width: 80%;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.underline {
+  border-bottom: 1px solid #d3d3d3;
+  margin: 15px 0;
+}
